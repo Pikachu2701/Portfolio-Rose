@@ -534,7 +534,7 @@ i.bi.bi-arrow-right.loader.arrowTestemunhos {
     display: flex;
     flex-direction: column;
 }
-.btn2:focus,
+/* .btn2:focus,
 .btn2:hover {
     color: #fff;
 }
@@ -542,6 +542,9 @@ i.bi.bi-arrow-right.loader.arrowTestemunhos {
     font-size: .8rem;
     margin-right: 3rem;
     
+} */
+.btn {
+    display: none;
 }
 
 }
