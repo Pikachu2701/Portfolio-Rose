@@ -15,7 +15,7 @@ html {
 
 body {
    display: block;
-    background-image: linear-gradient(45deg, rgba(145, 192, 188, 0.267) 21%, white 20%, transparent 20%, rgb(143, 185, 143));
+   /*  background-image: linear-gradient(45deg, rgba(145, 192, 188, 0.267) 21%, white 20%, transparent 20%, rgb(143, 185, 143)); */
     max-width: 80%;
     margin: 0 auto;
     padding-top: 2rem;
@@ -51,11 +51,14 @@ body {
     gap: 3rem;
 }
 
-.menuMain_nav a {
+.menuMain_nav a, .menuMain_nav  {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 1.5rem;
 
+}
+.bi, .logo {
+    color: #fff;
 }
 
 
@@ -134,7 +137,7 @@ body {
 .idosos-img {
     border-radius: 5px;
     margin-top: 1rem;
-    box-shadow: 2px 2px 10px rgb(0 0 0 / .9);
+    
 }
 
 
@@ -147,9 +150,11 @@ body {
    
     border-radius: 50%;
     text-align: center;
-    outline: 1px solid rgba(145, 192, 188, 0.54);
+   
     display: block;
     margin: 0 auto;
+    filter: drop-shadow(2px 2px 10px black);
+}
     
    
   
@@ -158,8 +163,10 @@ body {
 
 
 
+.menuMain {
+    background-color: #000;
+   
 }
-
 
 .menuMain img {
     width: 24rem;
@@ -311,6 +318,7 @@ body {
     font-weight: 400;
     font-style: italic;
     font-size: 2rem;
+    color: #fff;
     
 }
 
@@ -342,8 +350,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
     gap: 6rem;
+   
 }
 .aboutInfo p, .aboutService p {
     font-size: 1.5rem;
@@ -364,6 +372,7 @@ body {
 }
 .bi-arrow-right {
     font-size: 4rem;
+    color: #000;
     
 }  
 
@@ -423,10 +432,10 @@ body {
     justify-content: space-evenly;
     width: 100%;
     padding-top: 3rem;
+    gap: 2rem;
    
     
    
-    gap: 2rem;
     
   }
   .testemunhos div {
@@ -450,12 +459,66 @@ body {
     
     padding-bottom: 1rem;
   }
-  .testemunhoText {
-   
+  
  
- 
-
+@media screen and (max-width: 50.62em) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    .menuMain_nav {
+        display: none;
+    }
+  .heroMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
- 
+  .idoso-img {
+    width: 100%;
+    height: 100%;
+  }.aboutInfo p, .aboutService p {
+    font-size: 1.5rem;
+    width: 50rem;
+    margin: auto;
+  
+}
+  .aboutInfo p, .aboutService p {
+    font-size: 1.5rem;
+    width: 100%;
+    margin: auto;
+  
+}
+i.bi.bi-arrow-right.loader {
+    transform: rotate(90deg);
+    margin-left: 10rem;
+    font-size: 2.5rem;
+    
+}
+i.bi.bi-arrow-right.loader.arrowService {
+    margin-left: 15rem;
+}
+i.bi.bi-arrow-right.loader.arrowTestemunhos {
+    margin-left: 17rem;
+}
 
+.loader::before {
+    animation-fill-mode: backwards;
+    animation: moving 1s ease-in-out;
+}
+#testemunhos h3 {
+    font-size: 2.6rem;
+}
+.testemunhos {
+    display: flex;
+    flex-direction: column;
+}
+.btn2:focus,
+.btn2:hover {
+    color: #fff;
+}
+
+}
+
+    
 
