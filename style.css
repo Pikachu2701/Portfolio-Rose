@@ -429,19 +429,27 @@ body {
   }
   .testemunhos {
     display: flex;
-    justify-content: space-evenly;
+  
     width: 100%;
     padding-top: 3rem;
     gap: 2rem;
    
+}
+.testemunhos .divContainer {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
     
    
     
-  }
-  .testemunhos div {
+  .testemunhos.testemunhoArticle {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     align-items: center;
   }
   .testemunhoArticle {
@@ -459,6 +467,19 @@ body {
     
     padding-bottom: 1rem;
   }
+  .iconStar{
+    color: yellow;
+    display: flex;
+    flex-direction: row;
+  }
+  i.bi.bi-arrow-right.loader.arrowTestemunhos {
+    transform: rotate(90deg);
+    margin-left: 30rem;
+  }
+  .loader::before {
+    animation-fill-mode: backwards;
+    animation: moving 1s ease-in-out;
+}
   
  
 @media screen and (max-width: 50.62em) {
