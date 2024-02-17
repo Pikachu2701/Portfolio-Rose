@@ -480,6 +480,11 @@ body {
     animation-fill-mode: backwards;
     animation: moving 1s ease-in-out;
 }
+.divContainer {
+    background-color: #dddddd94;
+    border-radius: 10px;
+    flex: 1 0 25% ;
+}
   
  
 @media screen and (max-width: 50.62em) {
